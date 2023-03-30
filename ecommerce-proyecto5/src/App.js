@@ -3,7 +3,7 @@ import './App.css';
 import { Route,Routes } from 'react-router-dom';
 //import {useState} from 'react'
 import Login from './Pages/login/Login'
-import Registrarse from './Pages/registrarse/Registrarse'
+import Registro from './Pages/registro/Registro'
 import PerfilUsuario from './Pages/perfilusuario/PerfilUsuario'
 import ListaProductos from './Pages/listaoroductos/ListaProductos'
 import DetalleProducto from './Pages/detalleproducto/DetalleProducto'
@@ -20,7 +20,7 @@ function App() {
       <Route path='/' element={<Layout />}>
           <Route path="/" element={<Home />}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/registrarse" element={<Registrarse/>}/>
+          <Route path="/registro" element={<Registro/>}/>
           <Route path="/perfilusuario" element={<PerfilUsuario />}/>
           <Route path="/listaProductos" element={<ListaProductos />}/>
           <Route path="/detalleproducto" element={<DetalleProducto />}/>

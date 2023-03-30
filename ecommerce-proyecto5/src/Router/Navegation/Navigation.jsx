@@ -3,36 +3,40 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink} from 'react-router-dom';
+import logoEmpresa from "../../assets/LogoBrands.jpg";
 
 const Navigation = () => {
-  
+
   return (
     <div> 
      
      <Navbar collapseOnSelect expand="lg" className="bg-success bg-gradient" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">MARELI</Navbar.Brand>
+        <Navbar.Brand href="/">
+           <img
+              src={logoEmpresa}
+              height='40'
+              alt='Mareli'
+              loading='lazy'/>
+              MARELI </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <Nav.Link as={NavLink} to='/listaproductos' >Catalogo</Nav.Link>
+            <NavDropdown title="Usuarios" id="collasible-nav-dropdown">
+              <NavDropdown.Item as={NavLink} to='/login'>Iniciar session</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/registro'>Registro de Usuario</NavDropdown.Item>
+              <NavDropdown.Item  as={NavLink} to='/perfilusuario'>Perfil de Usuario</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item  as={NavLink} to='/admin/nuevoproducto'>Crear Productos</NavDropdown.Item>
+              <NavDropdown.Item  as={NavLink} to='/admin/editarproducto'>Editar Productos</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link href="#deets">Carro de Compras</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+             Inicio Session
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
