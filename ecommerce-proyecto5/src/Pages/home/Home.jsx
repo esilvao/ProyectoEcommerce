@@ -10,7 +10,7 @@ import Badge from 'react-bootstrap/Badge';
 const Home = () => {
   return(
     <>
-     <div className="p-2 mb-2 mt-2 bg-dark bg-gradient text-white rounded-5 justify">Despachos gratis en Santiago por compras sobre 50.000 </div>
+     <div className="p-2 mb-2 mt-2 bg-dark bg-gradient text-white rounded-5 d-flex justify-content-center">Despachos gratis en Santiago por compras sobre 50.000 </div>
       <CarrucelHome />
       
       <LoMasVendido />

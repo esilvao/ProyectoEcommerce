@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink} from 'react-router-dom';
-import logoEmpresa from "../../assets/LogoBrands.jpg";
+import logoEmpresa from "../../assets/LogoEmpresa.jpg";
 
 const Navigation = () => {
 
