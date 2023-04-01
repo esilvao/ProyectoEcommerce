@@ -3,19 +3,23 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
-import Badge from 'react-bootstrap/Badge';
+import React from 'react';
+
 
 const Home = () => {
   return(
     <div>
       <CarrucelHome />
       <LoMasVendido />
+
+     
     </div>
   )
 }
 const LoMasVendido = () => {
   return (
     <div>   
+      <h1 style={{ fontSize: '32px', textAlign: 'center' }}>Lo Más Vendido</h1>
       <Row>
         <Col >
           <Card >
@@ -73,9 +77,12 @@ const LoMasVendido = () => {
             </Card.Body>
           </Card>
         </Col>
-      
     </Row>
+
+  
     </div>
+
+    
   )
 }
 
