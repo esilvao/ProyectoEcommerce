@@ -5,13 +5,13 @@ import { Route,Routes } from 'react-router-dom';
 import Login from './Pages/login/Login'
 import Registro from './Pages/registrarse/Registro'
 import PerfilUsuario from './Pages/perfilusuario/PerfilUsuario'
-import ListaProductos from './Pages/listaoroductos/ListaProductos'
+import ListaProductos from './Pages/listaProductos/ListaProductos'
 import DetalleProducto from './Pages/detalleproducto/DetalleProducto'
-import Footer from './Pages/footer/Footer'
+import Footer from './components/footer/Footer'
 import Home from './Pages/home/Home'
-import Layout from './Components/Layout'
-import NuevoProducto from './Pages/Admin/producto/NuevoProducto'
-import EditarProducto from './Pages/Admin/producto/EditarProducto'
+import Layout from './components/layout/Layout'
+import NuevoProducto from './Pages/admin/productos/NuevoProducto'
+import EditarProducto from './Pages/admin/productos/EditarProducto'
 
 function App() {
   return (
