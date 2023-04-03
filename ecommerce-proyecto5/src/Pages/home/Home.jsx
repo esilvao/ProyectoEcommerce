@@ -163,7 +163,7 @@ const CarrucelHome = () => {
 
           <Carousel.Caption>
             <h3>Moda Infantil</h3>
-            <p>Ropa y accesorios diseñados específicamente para niños y niñas de diferentes edades.</p>
+            <p className=" mb-2 bg-success bg-gradient text-white rounded-5"> Ropa y accesorios diseñados específicamente para niños y niñas de diferentes edades.</p>
           </Carousel.Caption>
 
         </Carousel.Item>

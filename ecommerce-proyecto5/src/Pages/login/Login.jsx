@@ -1,6 +1,6 @@
 import {Row,Col,Container} from 'react-bootstrap'
 import logoEmpresa from "../../assets/LogoEmpresa.jpg";
-import '../../Pages/login/Login.css'
+import '../../pages/login/Login.css'
 import Carousel from 'react-bootstrap/Carousel';
 
 const Login = () => {
