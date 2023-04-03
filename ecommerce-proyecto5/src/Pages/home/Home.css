@@ -6,3 +6,10 @@
   align-content: center;
 }
 
+.color-text {
+ 
+  background: green;
+  color: #fff;
+  max-width: auto;
+
+}

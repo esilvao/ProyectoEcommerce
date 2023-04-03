@@ -3,27 +3,26 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
-import React from 'react';
-
+import Badge from 'react-bootstrap/Badge';
 
 const Home = () => {
   return(
-    <div>
+    <>
+     <div className="p-2 mb-2 mt-2 bg-dark bg-gradient text-white rounded-5 d-flex justify-content-center">Despachos gratis en Santiago por compras sobre 50.000 </div>
       <CarrucelHome />
+      
       <LoMasVendido />
-
-     
-    </div>
+    
+    </>
   )
 }
 const LoMasVendido = () => {
   return (
     <div>   
-      <h1 style={{ fontSize: '32px', textAlign: 'center' }}>Lo Más Vendido</h1>
       <Row>
         <Col >
           <Card >
-          <Card.Header>Featured</Card.Header>
+          <Card.Header>Lo mas vendido</Card.Header>
             <Card.Img variant="top" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8TW9kYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="S"  style={{width : '200px',height: '250px'}} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
@@ -37,7 +36,7 @@ const LoMasVendido = () => {
         </Col>
         <Col>
           <Card>
-          <Card.Header>Featured</Card.Header>
+          <Card.Header>Lo mas vendido</Card.Header>
           <Card.Img variant="top" src="https://images.unsplash.com/photo-1571678432797-0fd4f9061c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEyfHxNb2RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="S"  style={{width : '200px',height: '250px'}} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
@@ -51,7 +50,7 @@ const LoMasVendido = () => {
         </Col>
         <Col>
           <Card>
-          <Card.Header>Featured</Card.Header>
+          <Card.Header>Avance de Temporada</Card.Header>
           <Card.Img variant="top" src="https://images.unsplash.com/photo-1596902852858-126144389ee2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fE1vZGF8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="S"  style={{width : '200px',height: '250px'}} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
@@ -65,7 +64,7 @@ const LoMasVendido = () => {
         </Col>
         <Col>
           <Card>
-          <Card.Header>Featured</Card.Header>
+          <Card.Header>Avance de Temporada</Card.Header>
           <Card.Img variant="top" src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjAwfHxNb2RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="S"  style={{width : '200px',height: '250px'}} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
@@ -78,11 +77,7 @@ const LoMasVendido = () => {
           </Card>
         </Col>
     </Row>
-
-  
     </div>
-
-    
   )
 }
 
@@ -111,8 +106,8 @@ const CarrucelHome = () => {
             style={{width : '400px',height: '400px'}}
           />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Moda Mujer</h3>
+          <p className=" mb-2 bg-success bg-gradient text-white rounded-5"> Las tendencias y todo lo que buscas lo tenemos para tí</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -135,9 +130,9 @@ const CarrucelHome = () => {
             style={{width : '400px',height: '400px'}}
           />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <Carousel.Caption >
+          <h3 >Moda Hombre</h3>
+          <p className=" mb-2 bg-success bg-gradient text-white rounded-5"> Lo que esta de moda y todo lo que más te gusta lo enncuentras aquí.</p>
         </Carousel.Caption>
       </Carousel.Item>
 
