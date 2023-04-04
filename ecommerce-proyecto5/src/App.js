@@ -2,16 +2,16 @@
 import './App.css';
 import { Route,Routes } from 'react-router-dom';
 //import {useState} from 'react'
-import Login from './Pages/login/Login'
-import Registro from './Pages/registrarse/Registro'
-import PerfilUsuario from './Pages/perfilusuario/PerfilUsuario'
-import ListaProductos from './Pages/listaoroductos/ListaProductos'
-import DetalleProducto from './Pages/detalleproducto/DetalleProducto'
-import Footer from './Pages/footer/Footer'
-import Home from './Pages/home/Home'
-import Layout from './Components/Layout'
-import NuevoProducto from './Pages/Admin/producto/NuevoProducto'
-import EditarProducto from './Pages/Admin/producto/EditarProducto'
+import Login from './pages/login/Login'
+import Registro from './pages/registro/Registro'
+import PerfilUsuario from './pages/perfilusuario/PerfilUsuario'
+import ListaProductos from './pages/listaProductos/ListaProductos'
+import DetalleProducto from './pages/detalleproducto/DetalleProducto'
+import Footer from './components/footer/Footer'
+import Home from './pages/home/Home'
+import Layout from './components/layout/Layout'
+import NuevoProducto from './pages/admin/productos/NuevoProducto'
+import EditarProducto from './pages/admin/productos/EditarProducto'
 
 function App() {
   return (
